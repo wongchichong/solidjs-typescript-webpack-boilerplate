@@ -1,0 +1,39 @@
+{
+  "name": "solidtest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --hot",
+    "build:dev": "webpack",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/node": "^13.11.0",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "babel-preset-solid": "^0.17.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "csstips": "^1.2.0",
+    "csx": "^10.0.1",
+    "error-overlay-webpack-plugin": "^0.4.1",
+    "fork-ts-checker-webpack-plugin": "^4.1.2",
+    "html-webpack-plugin": "^4.0.4",
+    "solid-js": "^0.17.2",
+    "typescript": "^3.8.3",
+    "typestyle": "^2.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "url-loader": "^4.0.0"
+  }
+}
