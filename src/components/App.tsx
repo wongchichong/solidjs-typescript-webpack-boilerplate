@@ -1,8 +1,8 @@
-import { style, keyframes } from 'typestyle'
+import logo from '@/assets/logo.svg'
 import { normalize } from 'csstips'
+import { keyframes, style } from 'typestyle'
 
 import Button from './Button'
-import logo from '@/assets/logo.svg'
 
 export default function App() {
   normalize()
