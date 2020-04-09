@@ -100,7 +100,7 @@ module.exports = (env, argv) => {
             devServer: {
                 contentBase: dist,
                 compress: true,
-                port: 1337,
+                port: 8888,
                 overlay: {
                     warnings: true,
                     errors: true

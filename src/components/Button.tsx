@@ -1,5 +1,6 @@
 import { createMemo, createSignal } from 'solid-js'
 import { style } from 'typestyle'
+import { rgb } from 'csx'
 
 interface ButtonProps {
   label?: string
@@ -7,9 +8,11 @@ interface ButtonProps {
 export default function Button(props: ButtonProps = { label: 'Click Me' }) {
   const [isLoggedIn, login] = createSignal(false)
 
+  const blue = rgb(255, 255, 0).darken(0.12)
+
   const buttonStyle = createMemo(() => {
     return style({
-      backgroundColor: isLoggedIn() ? 'blue' : 'green',
+      backgroundColor: isLoggedIn() ? 'green' : blue.toString(),
       color: `white`,
       padding: 20,
       margin: 10,
