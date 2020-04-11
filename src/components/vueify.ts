@@ -32,7 +32,7 @@ export class Computed<T> {
     getter: () => T
 
     constructor(fn: (v?: T) => T) {
-        this.getter = createMemo(fn)
+        this.getter = fn
     }
 
     get value(): T {
