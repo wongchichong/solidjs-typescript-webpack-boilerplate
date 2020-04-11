@@ -1,6 +1,12 @@
 import { render } from 'solid-js/dom'
+import { normalize, setupPage } from 'csstips';
 
-import App from './components/App'
+import '@fortawesome/fontawesome-free/css/all.css'
 
-const appRoot = document.getElementById('app')!
+import App from './components/pages/App'
+
+const appSelect = 'app'
+const appRoot = document.getElementById(appSelect)!
+setupPage(appSelect)
+normalize()
 render(App, appRoot);
