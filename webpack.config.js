@@ -1,6 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -15,13 +15,13 @@ module.exports = (env, argv) => {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
-        new CopyWebpackPlugin([
-            {
-                from: 'public',
-                to: '',
-                cache: true,
-            },
-        ]),
+        // new CopyWebpackPlugin([
+        //     {
+        //         from: 'public',
+        //         to: '',
+        //         cache: true,
+        //     },
+        // ]),
     ]
 
     if (isProduction) {
@@ -127,4 +127,4 @@ module.exports = (env, argv) => {
     }
 
     return config
-};
+}

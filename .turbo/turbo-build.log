@@ -1,0 +1,42 @@
+
+> solidtest@1.0.0 build C:\temp\metarepo\packages\solidjs-typescript-webpack-boilerplate
+> webpack --mode production
+
+[webpack-cli] [31mValidationError: Invalid options object. Copy Plugin has been initialized using an options object that does not match the API schema.
+ - options[0] has an unknown property 'cache'. These properties are valid:
+   object { patterns, options? }
+    at validate (C:\temp\metarepo\node_modules\.pnpm\schema-utils@4.0.0\node_modules\schema-utils\dist\validate.js:115:11)
+    at new CopyPlugin (C:\temp\metarepo\node_modules\.pnpm\copy-webpack-plugin@11.0.0_webpack@5.75.0\node_modules\copy-webpack-plugin\dist\index.js:172:5)
+    at module.exports (C:\temp\metarepo\packages\solidjs-typescript-webpack-boilerplate\webpack.config.js:18:9)
+    at loadConfigByPath (C:\temp\metarepo\node_modules\.pnpm\webpack-cli@5.0.1_uaydpeuxkjjcxdbyfgk36cjdxi\node_modules\webpack-cli\lib\webpack-cli.js:1360:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WebpackCLI.loadConfig (C:\temp\metarepo\node_modules\.pnpm\webpack-cli@5.0.1_uaydpeuxkjjcxdbyfgk36cjdxi\node_modules\webpack-cli\lib\webpack-cli.js:1431:38)
+    at async WebpackCLI.createCompiler (C:\temp\metarepo\node_modules\.pnpm\webpack-cli@5.0.1_uaydpeuxkjjcxdbyfgk36cjdxi\node_modules\webpack-cli\lib\webpack-cli.js:1643:22)
+    at async WebpackCLI.runWebpack (C:\temp\metarepo\node_modules\.pnpm\webpack-cli@5.0.1_uaydpeuxkjjcxdbyfgk36cjdxi\node_modules\webpack-cli\lib\webpack-cli.js:1738:20)
+    at async Command.<anonymous> (C:\temp\metarepo\node_modules\.pnpm\webpack-cli@5.0.1_uaydpeuxkjjcxdbyfgk36cjdxi\node_modules\webpack-cli\lib\webpack-cli.js:885:21)
+    at async Command.parseAsync (C:\temp\metarepo\node_modules\.pnpm\commander@9.5.0\node_modules\commander\lib\command.js:935:5) {
+  errors: [
+    {
+      instancePath: '[0]',
+      schemaPath: '#/additionalProperties',
+      keyword: 'additionalProperties',
+      params: [Object],
+      message: 'must NOT have additional properties',
+      schema: false,
+      parentSchema: [Object],
+      data: [Object],
+      children: [Array]
+    }
+  ],
+  schema: {
+    definitions: { ObjectPattern: [Object], StringPattern: [Object] },
+    type: 'object',
+    additionalProperties: false,
+    properties: { patterns: [Object], options: [Object] },
+    required: [ 'patterns' ]
+  },
+  headerName: 'Copy Plugin',
+  baseDataPath: 'options',
+  postFormatter: null
+}[39m
+ ELIFECYCLE  Command failed with exit code 2.
